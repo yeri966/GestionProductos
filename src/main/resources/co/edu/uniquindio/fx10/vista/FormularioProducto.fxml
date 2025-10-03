@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.fx10.controlador.FormularioProductoController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <center>
+        <GridPane hgap="10" vgap="10" alignment="CENTER" prefWidth="400" prefHeight="300">
+            <Label text="Código:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtCodigo" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Nombre:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtNombre" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+            <Label text="Descripción:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtDescripcion" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+            <Label text="Precio:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtPrecio" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+            <Label text="Stock:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <TextField fx:id="txtStock" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+            <Button text="Guardar" onAction="#guardarProducto"
+                    GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+        </GridPane>
+    </center>
+
+</BorderPane>

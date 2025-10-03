@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="co.edu.uniquindio.fx10.controlador.ListadoProductoController"
+            prefHeight="400.0" prefWidth="600.0">
+<center>
+    <TableView fx:id="tablaProductos" layoutX="20" layoutY="20" prefWidth="560" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colCodigo" text="Código" prefWidth="100"/>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="120"/>
+            <TableColumn fx:id="colDescripcion" text="Descripción" prefWidth="150"/>
+            <TableColumn fx:id="colPrecio" text="Precio" prefWidth="100"/>
+            <TableColumn fx:id="colStock" text="Stock" prefWidth="80"/>
+        </columns>
+    </TableView>
+</center>
+</BorderPane>
